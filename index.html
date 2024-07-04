@@ -17,12 +17,12 @@
             <img src="img/t1.jpg" onmouseover="this.src='../img/t3.jpg'" onmouseout="this.src='../img/t1.jpg'" alt="枫"
                 id="img1" draggable="false">
             <img id="love" src="img/love.svg" draggable="false">
-            <img src="img/t2.jpg" onmouseover="this.src='../img/t3.jpg'" onmouseout="this.src='../img/t2.jpg'" alt="尹尹"
+            <img src="img/t2.jpg" onmouseover="this.src='../img/t4.jpg'" onmouseout="this.src='../img/t2.jpg'" alt="尹尹"
                 id="img2" draggable="false">
         </div>
         <div id="name">
-            <span class="name-style" id="name1">枫</span>
-            <span class="name-style" id="name2">尹尹</span>
+            <span class="name-style" id="name1">枫哈哈</span>
+            <span class="name-style" id="name2">尹嘻嘻</span>
         </div>
         <!-- 计时器 -->
         <div id="time">
@@ -66,11 +66,25 @@
             let s = Math.floor(f / 60) // 小时
             let ss = s % 24
             let day = Math.floor(s / 24) // 天数
-            return "已经一起度过<br>" +
+            let start2 = '2024-04-15 02:12:15'
+            let startTime2 = new Date(start2.replace(/-/g, '/')).getTime()
+            let difference2 = currentTime - startTime2
+            let m2 = Math.floor(difference2 / (1000))
+            let mm2 = m2 % 60  // 秒
+            let f2 = Math.floor(m2 / 60)
+            let ff2 = f2 % 60 // 分钟
+            let s2 = Math.floor(f2 / 60) // 小时
+            let ss2 = s2 % 24
+            let day2 = Math.floor(s2 / 24) // 天数
+            return "已经相识<br>" +
                 " <font color=#FF5722>" + day + "</font> 天" +
                 " <font color=#FFA000>" + ss + "</font> 小时" +
                 " <font color=#03A9F4>" + ff + "</font> 分钟" +
-                " <font color=#448AFF>" + mm + "</font> 秒"
+                " <font color=#448AFF>" + mm + "</font> 秒<br>已经相爱<br>" +
+                " <font color=#FF5722>" + day2 + "</font> 天" +
+                " <font color=#FFA000>" + ss2 + "</font> 小时" +
+                " <font color=#03A9F4>" + ff2 + "</font> 分钟" +
+                " <font color=#448AFF>" + mm2 + "</font> 秒"
         }
         setInterval(() => {
             document.getElementById('timejishiqi').innerHTML = timingTime()
