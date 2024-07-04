@@ -87,6 +87,10 @@ p {
 
 /* 适配手机端 */
 @media only screen and (max-width: 639px) {
+    body {
+        background-image: url(../img/bg6.jpg);
+    }
+
     #box {
         margin: 20% auto;
         width: 300px;
