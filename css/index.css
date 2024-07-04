@@ -33,9 +33,13 @@ body {
 
 /* 构建基本结构 */
 #main-box {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-40%);
     margin: 0 auto;
     width: 800px;
-    height: 400px;
+    height: 480px;
     border-radius: 50px;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -130,7 +134,7 @@ body {
     clear: both;
     text-align: center;
     line-height: 40px;
-    height: 80px;
+    height: 160px;
     margin-top: 30px;
     animation: jxdh2 1.5s linear;
     color: #fff;
@@ -270,13 +274,13 @@ body {
     }
 
     #box {
-        height: 134px;
+        height: 214px;
         width: 83%;
         margin: 0 auto;
         margin-top: -20px;
         /* background-color: yellow; */
         text-align: center;
-        line-height: 134px;
+        line-height: 214px;
     }
 
     .smallbox {
