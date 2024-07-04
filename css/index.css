@@ -225,7 +225,7 @@ body {
 
     #main-box {
         width: 83%;
-        height: 430px;
+        height: 510px;
     }
 
     #touxiang {
@@ -274,13 +274,13 @@ body {
     }
 
     #box {
-        height: 214px;
+        height: 134px;
         width: 83%;
         margin: 0 auto;
         margin-top: -20px;
         /* background-color: yellow; */
         text-align: center;
-        line-height: 214px;
+        line-height: 134px;
     }
 
     .smallbox {
